@@ -1,4 +1,4 @@
-import db from './db.js';
+import db from '../adat/db.js';
 import express from 'express';
 import mysql from 'mysql2/promise';
 
@@ -19,3 +19,4 @@ jaratok.get('/', async (req, res) => {
 
     res.json(eredmeny);
 })
+export default jaratok;
