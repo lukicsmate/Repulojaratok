@@ -7,6 +7,7 @@ import repuloterek from './routes/repuloterek.js';
 import repuloterekByKod from './routes/repuloterekByKod.js'
 import repuloterekIndulasok from './routes/repuloterekIndulasok.js';
 import legitarsasagok from './routes/legitarsasagok.js';
+import utvonal from './routes/utvonal.js';
 const app = express();
 app.use(express.json());
 
@@ -16,6 +17,7 @@ app.use(repuloterekByKod)
 app.use('/repuloterek',repuloterek)
 app.use(repuloterekIndulasok)
 app.use('/legitarsasagok',legitarsasagok)
+app.use('/utvonal',utvonal)
 app.listen(3000,()=>{
 	console.log(`Server is running at http://localhost:3000`);
 })
